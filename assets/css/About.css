@@ -1,0 +1,458 @@
+@font-face {
+    font-family: NotoSerifKhmer;
+    src: url("../fonts/NotoSerifKhmer.ttf");
+}
+
+@font-face {
+    font-family: KoulenRegular;
+    src: url("../fonts/Koulen-Regular.ttf");
+}
+
+
+
+/* .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--bs-navbar-active-color);
+    font-family:KoulenRegular ;
+} */
+
+a.nav-link.active {
+    color: green;
+    font-family: KoulenRegular;
+}
+
+a.nav-link:hover {
+    color: red !important;
+}
+
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+    color: black !important;
+}
+
+.nav-link activefonthome {
+    color: green;
+    font-family: NotoSerifKhmer;
+
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-color: #ff6f61;
+    --dark-color: #333;
+    --border-color: #ddd;
+}
+
+footer {
+    background-image: url(/assets/images/5.png);
+    padding-top: 50px;
+}
+
+body {
+    font-family: sans-serif;
+    background: #f5f6f9;
+    margin-top: 200px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--dark-color)
+}
+
+a {
+    font-weight: bold;
+}
+
+p {
+    color: var(--parg-color);
+    /* font-family: KoulenRegular;
+    src: url("../fonts/Koulen-Regular.ttf"); */
+}
+
+.container {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:1500px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* 
+Header!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1000;
+    border-bottom: 1px solid var(--border-color);
+}
+
+header .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header .top-nav .logo img {
+    width: 100px;
+}
+
+header .top-nav .search {
+    width: 500px;
+    border: 2px solid var(--main-color);
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+header .top-nav .search input {
+    padding: 18px 175px 18px 20px;
+    outline: none;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header .top-nav .search button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    outline: none;
+    border: none;
+    width: 170px;
+    background-color: var(--main-color);
+    height: 100%;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+header .top-nav .cart_header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .top-nav .cart_header i {
+    color: var(--dark-color);
+    font-size: 20px;
+    border: 1px solid var(--border-color);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+header .top-nav .cart_header i:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+header .top-nav .cart_header .icon_cart {
+    position: relative;
+}
+
+header .top-nav .cart_header .count_item {
+    position: absolute;
+    background: var(--main-color);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 13px;
+    top: -5px;
+    right: 0;
+    color: #fff;
+    border: 1px solid var(--border-color);
+}
+
+header .top-nav .cart_header .total_price p {
+    margin: 0;
+}
+
+header nav {
+    background: #fff;
+}
+
+header nav .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header nav .links ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav .links ul li {
+    position: relative;
+    padding: 20px 0;
+}
+
+header nav .links ul li a {
+    color: var(--dark-color, #000);
+    /* Default dark color if var is not defined */
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+header nav .links ul li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--main-color, #3498db);
+    /* Default main color if var is not defined */
+    transition: 0.3s ease-in-out;
+}
+
+header nav .links ul li.active::after,
+header nav .links ul li:hover::after {
+    width: 100%;
+}
+
+header nav .links .login_signup {
+    display: flex;
+    gap: 10px;
+    /* Add spacing between login and signup buttons */
+}
+
+header nav .links .login_signup a {
+    color: #fff;
+    padding: 10px 20px;
+    background-color: var(--main-color, #3498db);
+    /* Default main color if var is not defined */
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+header nav .links .login_signup a:hover {
+    background-color: darken(var(--main-color, #3498db), 5%);
+    /* Darken color on hover */
+}
+
+/* End Header!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* About Section Styles */
+.about_section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-md-6 {
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.img-box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.detail-box {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading_container h2 {
+    margin: 0 0 20px;
+    font-size: 28px;
+    color: red;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.detail-box p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: KoulenRegular;
+    src: url("../fonts/Koulen-Regular.ttf");
+}
+
+.detail-box a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.detail-box a:hover {
+    background-color: red;
+}
+
+
+/* Footer */
+.footer {
+    width: 100%;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    /* display: flex;
+    justify-content: space-around;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center; */
+
+}
+
+.footer .container .footer-content p {
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+    width: 190px;
+    margin: auto;
+    padding: 7px;
+}
+
+.footer .footer-content h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: bold;
+}
+
+.footer .footer-content p {
+    color: #fff;
+}
+
+.footer .footer-content ul {
+    margin: auto;
+    padding: 7px;
+}
+
+.footer .footer-content ul.list {
+    list-style: none;
+    padding: 0;
+
+}
+
+.footer .footer-content ul.list li {
+    padding: 7px;
+    position: relative;
+}
+
+.footer .footer-content ul.list li::before {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #463BAC;
+    transition: width .5s;
+}
+
+.footer .footer-content ul.list li:hover::before {
+    width: 100%;
+}
+
+.footer .social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .social-icons li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.footer .social-icons i {
+    color: white;
+    font-size: 25px;
+}
+
+.footer .footer-content a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .footer-content a:hover {
+    color: #6e3bd4;
+}
+
+.footer .social-icons i:hover {
+    color: #333333;
+}
+
+.bottom-bar {
+    background-image: url(/assets/images/5.png);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+.bottom-bar p {
+    color: white;
+    margin: 0;
+    font-size: 20px;
+    padding: 7px;
+}
+
+/* <-----End-Footer-----> */

@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartWatch</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="/Imagess_all/img/smartwatch.png" type="">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/SmartWatch.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+
+</head>
+
+<body>
+    <!-- /* <----Header---- */ -->
+    <header>
+        <div class="container top-nav">
+            <a href="#" class="logo"><img src="/Imagess_all/img/Logo.png" alt="logo"></a>
+            <form action="" class="search">
+                <input type="search" placeholder="Search for product...">
+                <button type="submit">Search</button>
+            </form>
+            <div class="cart_header">
+                <div class="icon_cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="count_item" id="count_itms">0</span>
+                </div>
+                <div class="total_price">
+                    <p>My Cart:</p>
+                    <p class="price_cart_head" id="Cart_Amout">$0</p>
+                </div>
+            </div>
+        </div>
+        <!-- <nav>
+            <div class="links container">
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">All Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="login_signup">
+                    <a href="#">Login <i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="#">Sign Up <i class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
+        </nav> -->
+    </header>
+
+    <!-- <------Slide-------->
+
+    <div class="carousel slide" style="padding-top: 10% ; ">
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/Imagess_all/Slide/appleW-1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Imagess_all/Slide/appleW-2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Imagess_all/Slide/apple-W3.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- <--------Card----Apple-Watch---->
+    <div class="gallery">
+        <div class="content">
+            <h4 class="price">$439</h4>
+            <button class="Buy1" onclick="btnAssu1click(439,'sbtn1')" id="sbtn1" onclick="">Order Now</button><br>
+            <img src="/Imagess_all/Apple Watch/apple-watch-series-9-nike-black.jpg" alt="">
+            <h5>Apple Watch Series 9</h5>
+            <p>
+                <br>
+                - Apple Watch Series 9 Nike Sport Band 45mm
+                <br>
+                - 41mm - GPS = 439$ (Midnight)
+                <br>
+                - 45mm - GPS = 459$ (Silver)
+                <br>
+                - Apple Store Warranty
+                <br>
+                - Color: Titanium Black
+            </p>
+        </div>
+        <div class="content">
+            <h4 class="price">$429</h4>
+            <button class="Buy2" onclick="btnAssu1click(429,'sbtn2')" id="sbtn2" onclick="">Order Now</button><br>
+            <img src="/Imagess_all/Apple Watch/apple-watch-series-9-aluminum-pink-pink-sport-band.jpg" alt="">
+            <h5>Apple Watch Series 9</h5>
+            <p>
+                <br>
+                - Apple Watch Series 9 Sport Band 45mm
+                <br>
+                - 41mm: $399
+                <br>
+                - 45mm: $429
+                <br>
+                - Apple Store Warranty
+                <br>
+                - Color: Midnight, Starlight, Light Pink, Storm Blue
+            </p>
+        </div>
+        <div class="content">
+            <h4 class="price">$269</h4>
+            <button class="Buy3" onclick="btnAssu1click(269,'sbtn3')" id="sbtn3" onclick="">Order Now</button><br>
+            <img src="/Imagess_all/Apple Watch/apple-watch-se-starlight-44mm-gps.jpg" alt="">
+            <h5>Apple Watch SE</h5>
+            <p>
+                <br>
+                - Apple Watch SE (2023)
+                <br>
+                - 40mm: $269
+                <br>
+                - 44mm: $299
+                <br>
+                - Apple Store Warranty
+                <br>
+                - Color: Starlight
+            </p>
+        </div>
+        <div class="content">
+            <h4 class="price">$789</h4>
+            <button class="Buy4" onclick="btnAssu1click(789,'sbtn4')" id="sbtn4" onclick="">Order Now</button><br>
+            <img src="/Imagess_all/Apple Watch/Watch-Ultra-2-Alpine-Loop-Indigo-1.jpg" alt="">
+            <h5>Apple Watch Ultra 2 Alpine Loop</h5>
+            <p>
+                <br>
+                - Apple Watch Ultra 2 Alpine Loop
+                <br>
+                - 49mm = $789
+                <br>
+                - Apple Store Warranty
+                <br>
+                - Color: Blue, Indigo, Olive
+            </p>
+        </div>
+        <div class="content">
+            <h4 class="price">$779</h4>
+            <button class="Buy1" onclick="btnAssu1click(779,'sbtn5')" id="sbtn5" onclick="">Order Now</button><br>
+            <img src="/Imagess_all/Apple Watch/Watch-Ultra-2-Ocean-Band-Orange-1.jpg" alt="">
+            <h5>Apple Watch Ultra 2 Ocean Band</h5>
+            <p>
+                <br>
+                - Apple Watch Ultra 2 Ocean Band
+                <br>
+                - 49mm = $779
+                <br>
+                - Apple Store Warranty
+                <br>
+                - Color: Orange, White, Blue
+            </p>
+        </div>
+        <div class="content">
+            <h4 class="price">$779</h4>
+            <button class="Buy2" onclick="btnAssu1click(779,'sbtn6')" id="sbtn6" onclick="">Order Now</button><br>
+            <img src="/Imagess_all/Apple Watch/Watch-Ultra-2-Trail-Loop-Orange-Beige.jpg" alt="">
+            <h5>Apple Watch Ultra 2 Trail Loop</h5>
+            <p>
+                <br>
+                - Apple Watch Ultra 2 Trail Loop
+                <br>
+                - 49mm = $779
+                <br>
+                - Apple Store Warranty
+                <br>
+                - Color: Orange/Beige, Blue/Black, Green/Gray
+            </p>
+        </div>
+        <div class="content">
+            <h4 class="price">$319</h4>
+            <button class="Buy3" onclick="btnAssu1click(319,'sbtn7')" id="sbtn7" onclick="">Order Now</button><br>
+            <img src="/Imagess_all/Apple Watch/apple-watch-45-alum-midnight-series-8.jpg" alt="">
+            <h5>Apple Watch Series 8</h5>
+            <p>
+                <br>
+                - Apple Watch Series 8
+                <br>
+                - 41mm: $319
+                <br>
+                - Apple Store Warranty
+                <br>
+                - Color: Starlight, Midnight
+            </p>
+        </div>
+        <div class="content">
+            <h4 class="price">$639</h4>
+            <button class="Buy4" onclick="btnAssu1click(639,'sbtn8')" id="sbtn8" onclick="">Order Now</button><br>
+            <img src="/Imagess_all/Apple Watch/apple-watch-ultra-green.jpg" alt="">
+            <h5>Apple Watch Ultra</h5>
+            <p>
+                <br>
+                - Apple Watch Ultra
+                <br>
+                - 49mm = $639
+                <br>
+                - Apple Store Warranty
+                <br>
+                - Color: Blue/Gray Trail Loop
+            </p>
+        </div>
+    </div>
+
+    <!-- <------Slide-------->
+
+    <!-- <div class="carousel slide" style="padding-top: 10% ; " > -->
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/Imagess_all/Slide/huawei watch-1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/Imagess_all/Slide/huawei watch-2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/Imagess_all/Slide/huawei watch-3.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- </div> -->
+
+    <!-- <--------Card----Huawei-Watch---->
+    <div class="gallery">
+        <div class="content">
+            <h4 class="price">$489</h4>
+            <button class="Buy1" onclick="btnAssu1click(489,'sbtn9')" id="sbtn9" onclick="">Order Now</button><br>
+            <img src="/Imagess_all/Huawei-Watch/huawei-watch-d.jpg" alt="">
+            <h5>Huawei Watch D</h5>
+            <p>
+                <br>
+                - Huawei Watch D
+                <br>
+                - Blood Pressure Measurement
+                <br>
+                - ECG Analysis
+                <br>
+                - HUAWEI TruSeen™ 5.0+ Heart Rate Monitoring
+                <br>
+                - SpO2 Monitoring
+                <br>
+                - Huawei Store Warranty
+                <br>
+                - Color: Black
+            </p>
+        </div>
+        <div class="content">
+            <h4 class="price">$799</h4>
+            <button class="Buy2" onclick="btnAssu1click(799,'sbtn10')" id="sbtn10" onclick="">Order Now</button><br>
+            <img src="/Imagess_all/Huawei-Watch/HUAWEI-WATCH-ULTIMATE-EXPEDITION-BLACK.jpg" alt="">
+            <h5>HUAWEI WATCH Ultimate</h5>
+            <p>
+                <br>
+                - HUAWEI WATCH Ultimate - Expedition Black
+                <br>
+                - Innovative Liquid Metal Material
+                <br>
+                - 100 m Diving Technology
+                <br>
+                - All-new Expedition Mode
+                <br>
+                - Huawei Store Warranty
+                <br>
+                - Color: Expedition Black, Voyage Blue
+            </p>
+        </div>
+        <div class="content">
+            <h4 class="price">$329</h4>
+            <button class="Buy3" onclick="btnAssu1click(329,'sbtn11')" id="sbtn11" onclick="">Order Now</button><br>
+            <img src="/Imagess_all/Huawei-Watch/huawei-watch-gt-runner-grey.jpg" alt="">
+            <h5>Huawei Watch GT</h5>
+            <p>
+                <br>
+                - Huawei Watch GT Runner 46mm
+                <br>
+                - Price: $329
+                <br>
+                - Size: 46mm
+                <br>
+                - Huawei Store Warranty
+                <br>
+                - Color: Black, Gray
+            </p>
+        </div>
+        <div class="content">
+            <h4 class="price">$389</h4>
+            <button class="Buy4" onclick="btnAssu1click(389,'sbtn12')" id="sbtn12" onclick="">Order Now</button><br>
+            <img src="/Imagess_all/Huawei-Watch/huawei-watch-buds-brown.jpg" alt="">
+            <h5>Huawei Watch Buds</h5>
+            <p>
+                <br>
+                - Huawei Watch Buds
+                <br>
+                - Price: $389
+                <br>
+                - Size: 1.43 inches
+                <br>
+                - Huawei Store Warranty
+                <br>
+                - Color: Black, Khaki
+            </p>
+        </div>
+        <div class="content">
+            <h4 class="price">$239</h4>
+            <button class="Buy1" onclick="btnAssu1click(239,'sbtn13')" id="sbtn13" onclick="">Order Now</button><br>
+            <img src="/Imagess_all/Huawei-Watch/HUAWEI-WATCH-G-4-41MM-LIGHT-GOLD-GOLD-MILANESE-STRAP-1.png" alt="">
+            <h5>HUAWEI WATCH GT 4</h5>
+            <p>
+                <br>
+                - HUAWEI WATCH GT 4 41mm Light Gold
+                <br>
+                - Watch Case: Stainless steel
+                <br>
+                - Watch Strap: Light Gold Milanese strap
+                <br>
+                - Huawei Store Warranty
+                <br>
+                - Color: Gold
+            </p>
+        </div>
+        <div class="content">
+            <h4 class="price">$239</h4>
+            <button class="Buy2" onclick="btnAssu1click(239,'sbtn14')" id="sbtn14" onclick="">Order Now</button><br>
+            <img src="/Imagess_all/Huawei-Watch/HUAWEI-WATCH-GT-4-41-mm-White.jpg" alt="">
+            <h5>HUAWEI WATCH GT 4</h5>
+            <p>
+                <br>
+                - HUAWEI WATCH GT 4 41mm White
+                <br>
+                - Watch Case: Stainless steel
+                <br>
+                - Watch Strap: White Leather Strap
+                <br>
+                - Huawei Store Warranty
+                <br>
+                - Color: Gold
+            </p>
+        </div>
+        <div class="content">
+            <h4 class="price">$349</h4>
+            <button class="Buy3" onclick="btnAssu1click(349,'sbtn15')" id="sbtn15" onclick="">Order Now</button><br>
+            <img src="/Imagess_all/Huawei-Watch/HUAWEI-WATCH-GT-4-46-mm-Grey.jpg" alt="">
+            <h5>HUAWEI WATCH GT 4</h5>
+            <p>
+                <br>
+                - HUAWEI WATCH GT 4 46 mm Grey
+                <br>
+                - Watch Case: Stainless steel
+                <br>
+                - Watch Strap: Grey Stainless Steel Strap
+                <br>
+                - Huawei Store Warranty
+                <br>
+                - Color: Black, Steel, Silver
+            </p>
+        </div>
+        <div class="content">
+            <h4 class="price">$219</h4>
+            <button class="Buy4" onclick="btnAssu1click(219,'sbtn15')" id="sbtn15" onclick="">Order Now</button><br>
+            <img src="/Imagess_all/Huawei-Watch/huawei-watch-buds-brown.jpg" alt="">
+            <h5>HUAWEI WATCH GT 4</h5>
+            <p>
+                <br>
+                - HUAWEI WATCH GT 4 46mm Green
+                <br>
+                - Watch Case: Stainless steel
+                <br>
+                - Watch Strap: Green Composite Strap
+                <br>
+                - Huawei Store Warranty
+                <br>
+                - Color: Black, Steel, Silver
+            </p>
+        </div>
+    </div>
+
+    <!-- <--------slide--Amazfit----------->
+    <!-- <div class="carousel slide" style="padding-top: 10% ; " > -->
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/Imagess_all/Slide/Amazfit-1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/Imagess_all/Slide/Amazfit-2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/Imagess_all/Slide/Amazfit-3.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- </div> -->
+
+    <!-- <--------Card----Amazfit-Watch---->
+    <div class="gallery">
+        <div class="content">
+            <h4 class="price">$399</h4>
+            <button class="Buy1" onclick="btnAssu1click(399,'sbtn16')" id="sbtn16" onclick="">Order Now</button><br>
+            <img src="/Imagess_all/Amazfit_Watch/Amazfit-T-Rex-Ultra-Sahara.jpg" alt="">
+            <h5>Amazfit T-Rex Ultra Sahara</h5>
+            <p>
+                <br>
+                - Amazfit T-Rex Ultra Sahara
+                <br>
+                - 316L Stainless Steel
+                <br>
+                - Peak 1,000nit Brightness
+                <br>
+                - Ultra-low Temperature Operation
+                <br>
+                - Strong & Accurate Dual-band GPS
+                <br>
+                - 30m Freediving Support
+                <br>
+                - Strength Exercise Recognition
+                <br>
+                - Health-centered Zepp OS 2.0
+                <br>
+                - Realme Store Warranty
+                <br>
+                - Color: Black
+            </p>
+        </div>
+        <div class="content">
+            <h4 class="price">$229</h4>
+            <button class="Buy2" onclick="btnAssu1click(229,'sbtn17')" id="sbtn17" onclick="">Order Now</button><br>
+            <img src="/Imagess_all/Amazfit_Watch/Amazfit-T-Rex-2-Wild-Green.jpg" alt="">
+            <h5>Amazfit T-Rex 2</h5>
+            <p>
+                <br>
+                - Amazfit T-Rex 2 Wild Green
+                <br>
+                - Dual-band & 5 Satellite Positioning
+                <br>
+                - Ultra-low Temperature Operation
+                <br>
+                - Route Import & Real-time Navigation
+                <br>
+                - Military-grade Toughness
+                <br>
+                - Realme Store Warranty
+                <br>
+                - Color: Wild Green
+            </p>
+        </div>
+        <div class="content">
+            <h4 class="price">$299</h4>
+            <button class="Buy3" onclick="btnAssu1click(299,'sbtn18')" id="sbtn18" onclick="">Order Now</button><br>
+            <img src="/Imagess_all/Amazfit_Watch/Amazfit Cheetah Pro.webp" alt="">
+            <h5>Amazfit Cheetah Pro</h5>
+            <p>
+                <br>
+                - Amazfit Cheetah Pro
+                <br>
+                - Premium lightweight design
+                <br>
+                - Unrivaled GPS accuracy
+                <br>
+                - Personalized training guidance
+                <br>
+                - Race ahead of the competition
+                <br>
+                - Realme Store Warranty
+                <br>
+                - Color: Run Track Black (Titanium Alloy Bezel)
+            </p>
+        </div>
+        <div class="content">
+            <h4 class="price">$239</h4>
+            <button class="Buy4" onclick="btnAssu1click(239,'sbtn19')" id="sbtn19" onclick="">Order Now</button><br>
+            <img src="/Imagess_all/Amazfit_Watch/Amazfit-Balance-Midnight.jpg" alt="">
+            <h5>Amazfit Balance</h5>
+            <p>
+                <br>
+                - Amazfit Balance - Midnight Black
+                <br>
+                - Mind & Body Readiness Analysis
+                <br>
+                - Body Composition Measurement
+                <br>
+                - Sleep Guidance & Relaxation Tools by Zepp Aura
+                <br>
+                - Dual-band GPS with Industry-leading Accuracy
+                <br>
+                - Personalized Chat AI Fitness Coaching
+                <br>
+                - Bluetooth Calls & Music Storage
+                <br>
+                - Realme Store Warranty
+                <br>
+                - Color: Run Track Black (Titanium Alloy Bezel)
+            </p>
+        </div>
+        <div class="content">
+            <h4 class="price">$149</h4>
+            <button class="Buy1" onclick="btnAssu1click(149,'sbtn20')" id="sbtn20" onclick="">Order Now</button><br>
+            <img src="/Imagess_all/Amazfit_Watch/Amazfit-Active-Edge-Mint-Green.jpg" alt="">
+            <h5>Amazfit Active Edge</h5>
+            <p>
+                <br>
+                - Amazfit Active Edge - Mint Green
+                <br>
+                - Bold Dual-Tone Swagger
+                <br>
+                - Navigate the Concrete Jungle
+                <br>
+                - Train Smarter with Zepp Coach
+                <br>
+                - Charge Less, Do More. 16 days of unstoppable energy
+                <br>
+                - Make a Splash. Brave the deep end with 10 ATM water-resistance
+                <br>
+                - Realme Store Warranty
+                <br>
+                - Color: Lava Black, Midnight Pulse, Mint Green
+            </p>
+        </div>
+        <div class="content">
+            <h4 class="price">$149</h4>
+            <button class="Buy2" onclick="btnAssu1click(149,'sbtn21')" id="sbtn21" onclick="">Order Now</button><br>
+            <img src="/Imagess_all/Amazfit_Watch/Amazfit-Active-Lavender-Purple.jpg" alt="">
+            <h5>Amazfit Active</h5>
+            <p>
+                <br>
+                - Amazfit Active - Lavender Purple
+                <br>
+                - Dive into a vivid 1.75″ HD AMOLED experience
+                <br>
+                - Stay connected for two full weeks on a single charge
+                <br>
+                - Understand how your activity affects your mental and physical recovery, with Readiness
+                <br>
+                - Zepp Coach™ brings AI-driven insights to elevate your training
+                <br>
+                - Five satellite systems ensure youre always on the right path.
+                <br>
+                - Make and take calls, and groove to your favorite tracks -all via Bluetooth.
+                <br>
+                - Realme Store Warranty
+                <br>
+                - Color: Midnight Black, Lavender Purple
+            </p>
+        </div>
+        <div class="content">
+            <h4 class="price">$139</h4>
+            <button class="Buy3" onclick="btnAssu1click(139,'sbtn22')" id="sbtn22" onclick="">Order Now</button><br>
+            <img src="/Imagess_all/Amazfit_Watch/Amazfit Active.webp" alt="">
+            <h5>Amazfit Active</h5>
+            <p>
+                <br>
+                - Amazfit Active
+                <br>
+                - Features
+                <br>
+                - Dive into a vivid 1.75″ HD AMOLED experience
+                <br>
+                - Stay connected for two full weeks on a single charge
+                <br>
+                - Understand how your activity affects your mental and physical recovery, with Readiness
+                <br>
+                - Five satellite systems ensure youre always on the right path.
+                <br>
+                - Make and take calls, and groove to your favorite tracks -all via Bluetooth.
+                <br>
+                - Realme Store Warranty
+                <br>
+                - Color: Midnight Black
+            </p>
+        </div>
+        <div class="content">
+            <h4 class="price">$49</h4>
+            <button class="Buy4" onclick="btnAssu1click(49,'sbtn23')" id="sbtn23" onclick="">Order Now</button><br>
+            <img src="/Imagess_all/Amazfit_Watch/Amazfit-Band-7-Black.jpg" alt="">
+            <h5>Amazfit Active 7</h5>
+            <p>
+                <br>
+                - Amazfit Band 7 Black
+                <br>
+                - 18-day Battery Life
+                <br>
+                - Large HD AMOLED Display
+                <br>
+                - 120 Built-in Sports Modes
+                <br>
+                - 24H Blood-oxygen Monitoring
+                <br>
+                - Test 3 Health Metrics in 1 Tap
+                <br>
+                - Realme Store Warranty
+                <br>
+                - Color: Black
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email:Mr.SengHun@gmail.com</p>
+                <p>Phone:+855 23 456 222</p>
+                <p>Address: Sihanouk ville</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="all_product.html">All Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="footer-social">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+                    <li><a href="#"><i class="fab fa-telegram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom-bar">
+            <p>&copy; 2024 Your Company. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/bootstrap.js"></script>
+    <script src="/assets/js/bootstrap.bundle.js"></script>
+    <script src="/assets/js/custome.js"></script>
+</body>
+
+</html>
